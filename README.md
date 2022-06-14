@@ -13,8 +13,13 @@ So in this repo, I decided to create the Python implementations for the 7 GUIs (
 ![image](https://user-images.githubusercontent.com/1778297/173684619-83be6e85-4f8c-400a-b59a-c9edfb506add.png)
 
 **2. Temperature Converter (WIP)**
+
 **3. Flight Booker (WIP)**
+
 **4. Timer (WIP)**
+
 **5. CRUD (WIP)**
+
 **6. Circle Drawer (WIP)**
+
 **7. Cells (WIP)**

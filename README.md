@@ -14,6 +14,8 @@ So in this repo, I decided to create the Python implementations for the 7 GUIs (
 
 **2. Temperature Converter (WIP)**
 
+![image](https://github.com/gradio-app/7guis-gradio/blob/main/2_Temperature_Converter/assets/temp_conv_demo.png?raw=true)
+
 **3. Flight Booker (WIP)**
 
 **4. Timer (WIP)**

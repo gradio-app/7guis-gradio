@@ -1,4 +1,3 @@
-from turtle import update
 import gradio as gr
 from datetime import datetime
 

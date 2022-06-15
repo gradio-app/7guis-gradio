@@ -2,7 +2,7 @@
 
 Gradio (Python) implementaion of [The 7 GUIs Benchmark](https://7guis.github.io/7guis/)
 
-Authors: [@abidlabs](https://twitter.com/abidlabs) (contributions welcome -- just open a PR!)
+Authors: [@abidlabs](https://twitter.com/abidlabs), [@ID56](https://github.com/ID56) -- contributions welcome, just open a PR!
 
 I recently came across the 7 GUIs benchmark, and was surprised to see that none [of the implementations](https://eugenkiss.github.io/7guis/implementations) were written in Python (whereas many other backend and frontend languages had implementations). This is probably due to the frustrations involved in building GUIs with Python, a problem that Gradio is designed to help with.
 

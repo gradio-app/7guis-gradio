@@ -2,6 +2,7 @@ import gradio as gr
 import numpy as np
 import re
 
+
 dummy_data = [["Alice", "Springs"], ["Max", "Brown"]]
 
 def fetch_data():
@@ -17,11 +18,18 @@ def create_item(name, surname):
 
 def update_item(out):
     """Update an item in the data store"""
+    dummy_data.clear()
+    for item in out.values.tolist():
+        dummy_data.append(item)
+    # handle the empty element dataframe returns
+    if dummy_data[-1] == ["", ""]:
+        dummy_data.pop(-1)
     return dummy_data
 
 def delete_item(name, surname):
     """Delete an item from the data store"""
-    dummy_data.remove([name, surname])
+    if [name, surname] in dummy_data:
+        dummy_data.remove([name, surname])
     return dummy_data
 
 def filter_with_prefix(prefix):
@@ -29,7 +37,7 @@ def filter_with_prefix(prefix):
     else return an empty list"""
     filtered_data = []
     for idx, lst in enumerate(dummy_data):
-        if re.search(f"^{prefix}", lst[1]):
+        if re.search(f"^{prefix}", lst[1], re.IGNORECASE):
             filtered_data.append(dummy_data[idx])
     return filtered_data
 

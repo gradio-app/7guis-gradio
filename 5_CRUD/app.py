@@ -43,14 +43,13 @@ def filter_with_prefix(prefix):
 
 with gr.Blocks() as demo:
 
-    fetch_btn = gr.Button("Fetch Data")
     out = gr.Dataframe(
             headers=["Name", "Surname"],
             datatype=["str", "str"],
             col_count=(2, "fixed"),
         )
 
-    fetch_btn.click(fetch_data, None, out)
+    demo.load(fetch_data, None, out)
     
     filter_prefix = gr.Text(label="Filter prefix")
     with gr.Row():
